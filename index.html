@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gisele Arno — Beleza & Progressiva</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        .btn-opcao {
+            background: linear-gradient(135deg, #ff4081, #e91e63);
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+            transition: transform 0.3s ease;
+            margin: 20px 0;
+        }
+
+        .btn-opcao:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-opcoes {
+            display: none;
+            margin-top: 15px;
+            padding: 20px;
+            border-radius: 12px;
+            background-color: #1a1a1a;
+            border: 1px solid #ff4081;
+            width: 260px;
+        }
+
+        .menu-opcoes a {
+            color: white;
+            display: block;
+            margin: 12px 0;
+            padding: 8px 10px;
+            border-radius: 6px;
+            transition: background 0.2s;
+            text-decoration: none;
+        }
+
+        .menu-opcoes a:hover {
+            background-color: #ff4081;
+        }
+
+        .menu-opcoes hr {
+            border: none;
+            border-top: 1px solid #ff4081;
+            margin: 10px 0;
+        }
+
+        .menu-opcoes strong {
+            color: #ff4081;
+        }
+
+        .mostrar {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ☰ Botão Menu Lateral -->
+    <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- 📋 Menu Lateral -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-header">
+            <h3>Gisele Arno</h3>
+
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="#sobre">
+                <i class="fas fa-user"></i>
+                Sobre a Profissional
+            </a>
+
+            <a href="#servicos">
+                <i class="fas fa-spa"></i>
+                Serviços
+            </a>
+
+            <a href="#resultados">
+                <i class="fas fa-images"></i>
+                Resultados
+            </a>
+
+            <a href="https://wa.me/5545988037494" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                Agendar Horário
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <p>© 2026 Gisele Arno</p>
+        </div>
+
+    </aside>
+
+
+    <!-- 🔝 Cabeçalho / Hero -->
+    <header class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <h1 class="nome-principal">
+                    Gisele Arno
+                </h1>
+
+                <p class="subtitulo">
+                    BELEZA & PROGRESSIVA
+                </p>
+
+                <p class="descricao">
+                    Realce sua beleza com seus cabelos,<br>
+                    mais lisos, saudáveis e cheios de brilho.<br>
+                    Atendimento personalizado para realçar<br>
+                    a sua melhor versão!
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="https://wa.me/5545988037494"
+                       target="_blank"
+                       class="btn-whatsapp">
+
+                        <i class="fab fa-whatsapp"></i>
+                        AGENDAR PELO WHATSAPP
+
+                    </a>
+
+                </div>
+
+
+                <!-- ✨ Mais opções -->
+                <button class="btn-opcao"
+                        onclick="alternarMenu()">
+
+                    ☰ ABRIR MAIS OPÇÕES
+
+                </button>
+
+                <div id="meuMenu" class="menu-opcoes">
+
+                    <strong>
+                        Escolha uma opção:
+                    </strong>
+
+                    <hr>
+
+                    <a href="https://wa.me/5545988037494"
+                       target="_blank">
+
+                        💬 WhatsApp
+
+                    </a>
+
+                    <a href="#servicos">
+                        💇‍♀️ Nossos Serviços
+                    </a>
+
+                    <a href="#resultados">
+                        📸 Resultados
+                    </a>
+
+                    <a href="#contato">
+                        📍 Localização
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- 🎥 Vídeo -->
+            <div class="hero-image">
+
+                <video
+                    src="video-apresentacao.mp4"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    style="width: 100%; height: auto; display: block; border-radius: inherit;"
+                >
+
+                    Seu navegador não suporta vídeos.
+
+                </video>
+
+            </div>
+
+        </div>
+
+        <div class="wave-divider"></div>
+
+    </header>
+
+
+    <!-- 👩 Sobre a Profissional -->
+    <section class="sobre" id="sobre">
+
+        <h2 class="titulo-secao">
+            Sobre <span>Gisele Arno</span>
+        </h2>
+
+        <div class="sobre-content">
+
+            <p>
+                Sou Gisele Arno, profissional da área da beleza
+                especializada em cuidados e transformação dos cabelos.
+                Meu trabalho é realizado com dedicação, cuidado e atenção
+                aos detalhes, buscando proporcionar cabelos mais bonitos,
+                alinhados, saudáveis e cheios de brilho.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ✨ Nossos Serviços -->
+    <section class="servicos" id="servicos">
+
+        <h2 class="titulo-secao">
+            Nossos <span>SERVIÇOS</span>
+        </h2>
+
+        <div class="servicos-grid">
+
+            <div class="servico-card">
+
+                <div class="icone">
+                    <i class="fas fa-cut"></i>
+                </div>
+
+                <h3>PROGRESSIVA</h3>
+
+                <p>
+                    Cabelos mais lisos, alinhados e sem frizz.
+                </p>
+
+            </div>
+
+
+            <div class="servico-card">
+
+                <div class="icone">
+                    <i class="fas fa-tint"></i>
+                </div>
+
+                <h3>HIDRATAÇÃO</h3>
+
+                <p>
+                    Hidratação profunda para fios saudáveis e macios.
+                </p>
+
+            </div>
+
+
+            <div class="servico-card">
+
+                <div class="icone">
+                    <i class="fas fa-wind"></i>
+                </div>
+
+                <h3>ESCOVA</h3>
+
+                <p>
+                    Mais brilho, leveza e movimento para seus cabelos.
+                </p>
+
+            </div>
+
+
+            <div class="servico-card">
+
+                <div class="icone">
+                    <i class="fas fa-flask"></i>
+                </div>
+
+                <h3>TRATAMENTOS</h3>
+
+                <p>
+                    Reconstrução e nutrição para fios fortes e bonitos.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 📸 Resultados Antes e Depois -->
+    <section class="resultados" id="resultados">
+
+        <h2 class="titulo-secao">
+            RESULTADOS <span>QUE FALAM</span>
+        </h2>
+
+        <div class="resultados-grid">
+
+
+            <div class="resultado-card">
+
+                <div class="antes-depois">
+
+                    <div class="img-box">
+
+                        <span>ANTES</span>
+
+                        <img
+                            src="antes1.jpg"
+                            alt="Resultado antes"
+                        >
+
+                    </div>
+
+
+                    <div class="img-box">
+
+                        <span>DEPOIS</span>
+
+                        <img
+                            src="depois1.jpg"
+                            alt="Resultado depois"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="resultado-card">
+
+                <div class="antes-depois">
+
+                    <div class="img-box">
+
+                        <span>ANTES</span>
+
+                        <img
+                            src="antes2.jpg"
+                            alt="Resultado antes"
+                        >
+
+                    </div>
+
+
+                    <div class="img-box">
+
+                        <span>DEPOIS</span>
+
+                        <img
+                            src="depois2.jpg"
+                            alt="Resultado depois"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="resultado-card">
+
+                <div class="antes-depois">
+
+                    <div class="img-box">
+
+                        <span>ANTES</span>
+
+                        <img
+                            src="antes3.jpg"
+                            alt="Resultado antes"
+                        >
+
+                    </div>
+
+
+                    <div class="img-box">
+
+                        <span>DEPOIS</span>
+
+                        <img
+                            src="depois3.jpg"
+                            alt="Resultado depois"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <p class="frase-final">
+            Sua melhor versão começa aqui! ❤
+        </p>
+
+    </section>
+
+
+    <!-- 💎 Diferenciais -->
+    <section class="diferenciais">
+
+        <div class="diferencial-item">
+
+            <i class="fas fa-gem"></i>
+
+            <span>
+                Produtos de alta qualidade
+            </span>
+
+            <p>
+                Para seus cabelos com excelência
+            </p>
+
+        </div>
+
+
+        <div class="diferencial-item">
+
+            <i class="fas fa-star"></i>
+
+            <span>
+                Atendimento personalizado
+            </span>
+
+            <p>
+                Cada detalhe feito com carinho
+            </p>
+
+        </div>
+
+
+        <div class="diferencial-item">
+
+            <i class="fas fa-shield-alt"></i>
+
+            <span>
+                Resultados
+            </span>
+
+            <p>
+                Cuidado e dedicação em cada atendimento
+            </p>
+
+        </div>
+
+
+        <div class="diferencial-item">
+
+            <i class="fas fa-heart"></i>
+
+            <span>
+                Cuidado & carinho
+            </span>
+
+            <p>
+                Tratamentos com amor
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 📞 Contato -->
+    <section class="contato" id="contato">
+
+        <div class="contato-grid">
+
+
+            <a href="https://wa.me/5545988037494"
+               target="_blank"
+               class="contato-item">
+
+                <i class="fab fa-whatsapp"></i>
+
+                <span>
+                    WHATSAPP
+                </span>
+
+                <p>
+                    (45) 98803-7494
+                </p>
+
+            </a>
+
+
+            <div class="contato-item">
+
+                <i class="fas fa-map-marker-alt"></i>
+
+                <span>
+                    LOCALIZAÇÃO
+                </span>
+
+                <p>
+                    Balneário Camboriú
+                </p>
+
+            </div>
+
+
+            <div class="contato-item">
+
+                <i class="fas fa-calendar-check"></i>
+
+                <span>
+                    ATENDIMENTO
+                </span>
+
+                <p>
+                    Com hora marcada
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 📌 Rodapé -->
+    <footer class="rodape">
+
+        <p class="assinatura">
+            Gisele Arno
+        </p>
+
+        <p class="sub-rodape">
+            BELEZA & PROGRESSIVA
+        </p>
+
+
+        <a href="https://wa.me/5545988037494"
+           target="_blank"
+           class="btn-agendar-rodape">
+
+            AGENDAR PELO WHATSAPP
+
+        </a>
+
+
+        <p class="texto-final">
+
+            Atendimento personalizado para deixar seus cabelos
+            mais lisos, alinhados, saudáveis e com brilho.
+
+        </p>
+
+
+        <p class="localizacao-final">
+
+            <i class="fas fa-map-marker-alt"></i>
+            Balneário Camboriú
+
+        </p>
+
+
+        <p class="copyright">
+
+            © 2026 Gisele Arno —
+            Todos os direitos reservados
+
+        </p>
+
+    </footer>
+
+
+    <!-- ⚡ JavaScript -->
+    <script>
+
+        // Menu lateral
+
+        const menuToggle =
+            document.getElementById('menuToggle');
+
+        const sidebar =
+            document.getElementById('sidebar');
+
+        const closeBtn =
+            document.getElementById('closeBtn');
+
+        const overlay =
+            document.getElementById('sidebarOverlay');
+
+
+        menuToggle.addEventListener('click', () => {
+
+            sidebar.classList.add('open');
+
+            overlay.classList.add('active');
+
+        });
+
+
+        const closeSidebar = () => {
+
+            sidebar.classList.remove('open');
+
+            overlay.classList.remove('active');
+
+        };
+
+
+        closeBtn.addEventListener(
+            'click',
+            closeSidebar
+        );
+
+
+        overlay.addEventListener(
+            'click',
+            closeSidebar
+        );
+
+
+        document
+            .querySelectorAll('.sidebar-nav a')
+            .forEach(link => {
+
+                link.addEventListener(
+                    'click',
+                    closeSidebar
+                );
+
+            });
+
+
+        // Botão de opções
+
+        function alternarMenu() {
+
+            const menu =
+                document.getElementById('meuMenu');
+
+            menu.classList.toggle('mostrar');
+
+        }
+
+    </script>
+
+</body>
+</html>
