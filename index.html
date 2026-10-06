@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Giseli Arno | Alisamento Progressivo</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="Giseli Arno — Especialista em alisamento progressivo. Beleza, cuidado e cabelos incríveis."
+        content="Giseli Arno — Alisamento Progressivo, beleza e cuidado profissional para seus cabelos."
     >
 
-    <!-- Fontes -->
+    <meta name="theme-color" content="#0a0709">
+
+    <title>Giseli Arno | Beleza & Progressiva</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -26,15 +33,15 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 
-    <!-- Nosso CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         CABEÇALHO
-    ========================== -->
+    <!-- ==================================================
+         MENU
+    =================================================== -->
 
     <header class="header" id="header">
 
@@ -42,13 +49,14 @@
 
             <a href="#inicio" class="logo">
                 <span>Giseli Arno</span>
-                <strong>BEAUTY</strong>
+                <small>BELEZA & PROGRESSIVA</small>
             </a>
 
             <button
                 class="menu-toggle"
                 id="menuToggle"
                 aria-label="Abrir menu"
+                type="button"
             >
                 <i class="fas fa-bars"></i>
             </button>
@@ -56,11 +64,8 @@
             <nav class="nav" id="nav">
 
                 <a href="#inicio">Início</a>
-
                 <a href="#sobre">Sobre</a>
-
                 <a href="#servicos">Serviços</a>
-
                 <a href="#contato">Contato</a>
 
             </nav>
@@ -70,67 +75,79 @@
     </header>
 
 
-    <!-- =========================
-         HERO
-    ========================== -->
+    <!-- ==================================================
+         CONTEÚDO
+    =================================================== -->
 
     <main>
 
+        <!-- ==================================================
+             HERO
+        =================================================== -->
+
         <section class="hero" id="inicio">
 
-            <div class="hero-grid container">
+            <div class="hero-glow hero-glow-one"></div>
+            <div class="hero-glow hero-glow-two"></div>
+
+            <div class="container hero-grid">
+
+                <!-- TEXTO -->
 
                 <div class="hero-content">
 
-                    <div class="eyebrow">
-                        <i class="fas fa-sparkles"></i>
-                        Beleza & Cuidado
+                    <div class="hero-kicker">
+                        <span></span>
+                        BELEZA • CUIDADO • ELEGÂNCIA
                     </div>
 
                     <h1>
-                        Cabelos
-                        <span>lindos e alinhados.</span>
+                        Seu cabelo.
+                        <strong>
+                            Sua beleza.
+                        </strong>
                     </h1>
 
                     <p class="hero-specialty">
                         Especialista em Alisamento Progressivo
                     </p>
 
-                    <p class="hero-description">
-                        Realce a beleza dos seus cabelos com um atendimento
-                        personalizado, cuidado profissional e técnicas pensadas
-                        para deixar seus fios mais alinhados, macios e brilhantes.
+                    <p class="hero-text">
+                        Cuidado profissional para deixar seus cabelos
+                        mais alinhados, macios, brilhantes e com aquele
+                        visual que faz você se sentir ainda mais linda.
                     </p>
-
 
                     <div class="hero-buttons">
 
                         <a
                             href="https://wa.me/5545988037494?text=Olá%20Giseli!%20Gostaria%20de%20agendar%20um%20horário."
                             target="_blank"
-                            rel="noopener"
-                            class="btn btn-whatsapp"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary"
                         >
                             <i class="fab fa-whatsapp"></i>
-                            Agendar pelo WhatsApp
+                            Agendar meu horário
                         </a>
 
                         <a
                             href="#servicos"
-                            class="btn btn-outline"
+                            class="btn btn-secondary"
                         >
                             Conhecer serviços
+                            <i class="fas fa-arrow-down"></i>
                         </a>
 
                     </div>
 
+                    <div class="hero-social">
 
-                    <div class="social-links">
+                        <span>Siga nas redes</span>
 
                         <a
                             href="https://instagram.com/giseliarno"
                             target="_blank"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             aria-label="Instagram"
                         >
                             <i class="fab fa-instagram"></i>
@@ -139,19 +156,10 @@
                         <a
                             href="https://facebook.com/"
                             target="_blank"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             aria-label="Facebook"
                         >
                             <i class="fab fa-facebook-f"></i>
-                        </a>
-
-                        <a
-                            href="https://wa.me/5545988037494"
-                            target="_blank"
-                            rel="noopener"
-                            aria-label="WhatsApp"
-                        >
-                            <i class="fab fa-whatsapp"></i>
                         </a>
 
                     </div>
@@ -161,28 +169,30 @@
 
                 <!-- FOTO -->
 
-                <div class="hero-photo">
+                <div class="hero-visual">
 
-                    <div class="photo-decoration"></div>
+                    <div class="hero-ring"></div>
 
-                    <div class="photo-frame">
+                    <div class="hero-photo">
 
                         <img
                             src="gisele-arno.jpg"
-                            alt="Giseli Arno - Especialista em Alisamento Progressivo"
+                            alt="Giseli Arno — especialista em alisamento progressivo"
                         >
 
                     </div>
 
-                    <div class="photo-badge">
+                    <div class="hero-card">
 
-                        <i class="fas fa-crown"></i>
+                        <div class="hero-card-icon">
+                            <i class="fas fa-sparkles"></i>
+                        </div>
 
                         <div>
-                            <strong>Giseli Arno</strong>
+                            <strong>Beleza & Cuidado</strong>
 
                             <span>
-                                Beleza & Progressiva
+                                Atendimento personalizado
                             </span>
                         </div>
 
@@ -192,39 +202,34 @@
 
             </div>
 
+            <div class="scroll-indicator">
+                <span>Descubra</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+
         </section>
 
 
-        <!-- =========================
-             SOBRE
-        ========================== -->
+        <!-- ==================================================
+             FRASE DE IMPACTO
+        =================================================== -->
 
-        <section class="intro" id="sobre">
+        <section class="statement">
 
-            <div class="intro-content">
+            <div class="container statement-content">
 
-                <div class="section-label">
-                    <i class="fas fa-heart"></i>
-                    Sobre o atendimento
-                </div>
+                <span class="section-mini-title">
+                    UM MOMENTO PARA VOCÊ
+                </span>
 
                 <h2>
-                    Seu cabelo merece
-                    <span>cuidado especial.</span>
+                    Mais do que alisar,
+                    <em>cuidar.</em>
                 </h2>
 
                 <p>
-                    Olá! Sou a Giseli Arno, especialista em alisamento
-                    progressivo. Meu objetivo é proporcionar uma experiência
-                    de beleza com atenção aos detalhes e cuidado com cada fio.
-                </p>
-
-                <br>
-
-                <p>
-                    Cada atendimento é pensado para valorizar a beleza dos
-                    seus cabelos e proporcionar um resultado bonito, alinhado
-                    e elegante.
+                    Porque quando você cuida dos seus cabelos,
+                    também está cuidando de você.
                 </p>
 
             </div>
@@ -232,39 +237,88 @@
         </section>
 
 
-        <!-- =========================
-             DIFERENCIAIS
-        ========================== -->
+        <!-- ==================================================
+             SOBRE
+        =================================================== -->
 
-        <section class="section">
+        <section class="about section" id="sobre">
 
-            <div class="container">
+            <div class="container about-grid">
 
-                <div class="section-heading center">
+                <div class="about-decoration">
+                    <i class="fas fa-heart"></i>
+                </div>
 
-                    <div class="section-label">
-                        <i class="fas fa-star"></i>
-                        Meu diferencial
-                    </div>
+                <div class="about-content">
+
+                    <span class="section-label">
+                        SOBRE A GISELI
+                    </span>
 
                     <h2>
-                        Beleza com
-                        <span>carinho e dedicação.</span>
+                        Beleza que começa
+                        <span>no cuidado.</span>
                     </h2>
 
                     <p>
-                        Um atendimento pensado para você se sentir ainda mais
-                        bonita e confiante.
+                        Olá, eu sou a Giseli Arno.
                     </p>
+
+                    <p>
+                        Trabalho com alisamento progressivo e cuidados
+                        capilares, buscando proporcionar uma experiência
+                        especial em cada atendimento.
+                    </p>
+
+                    <p>
+                        Meu propósito é valorizar a beleza dos seus
+                        cabelos, respeitando suas características e
+                        buscando um resultado bonito, elegante e
+                        bem cuidado.
+                    </p>
+
+                    <div class="about-signature">
+                        Giseli Arno
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             DIFERENCIAIS
+        =================================================== -->
+
+        <section class="benefits section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        POR QUE ESCOLHER
+                    </span>
+
+                    <h2>
+                        Uma experiência
+                        <span>pensada para você.</span>
+                    </h2>
 
                 </div>
 
 
-                <div class="features">
+                <div class="benefits-grid">
 
-                    <article class="feature">
+                    <article class="benefit-card">
 
-                        <div class="feature-icon">
+                        <div class="benefit-number">
+                            01
+                        </div>
+
+                        <div class="benefit-icon">
                             <i class="fas fa-heart"></i>
                         </div>
 
@@ -273,45 +327,55 @@
                         </h3>
 
                         <p>
-                            Cada cabelo possui suas características.
-                            Por isso, o atendimento é realizado de forma
-                            personalizada.
+                            Cada cabelo tem uma história. O atendimento
+                            é pensado de acordo com as características
+                            e necessidades dos seus fios.
                         </p>
 
                     </article>
 
 
-                    <article class="feature">
+                    <article class="benefit-card">
 
-                        <div class="feature-icon">
+                        <div class="benefit-number">
+                            02
+                        </div>
+
+                        <div class="benefit-icon">
                             <i class="fas fa-wand-magic-sparkles"></i>
                         </div>
 
                         <h3>
-                            Resultado bonito
+                            Cuidado em cada detalhe
                         </h3>
 
                         <p>
-                            Técnicas de alisamento pensadas para deixar
-                            os fios mais alinhados, macios e brilhantes.
+                            Um atendimento realizado com atenção,
+                            dedicação e carinho para que você aproveite
+                            cada momento.
                         </p>
 
                     </article>
 
 
-                    <article class="feature">
+                    <article class="benefit-card">
 
-                        <div class="feature-icon">
-                            <i class="fas fa-gem"></i>
+                        <div class="benefit-number">
+                            03
+                        </div>
+
+                        <div class="benefit-icon">
+                            <i class="fas fa-star"></i>
                         </div>
 
                         <h3>
-                            Cuidado profissional
+                            Beleza e confiança
                         </h3>
 
                         <p>
-                            Seu cabelo recebe atenção em cada etapa do
-                            atendimento.
+                            O objetivo é você sair do atendimento
+                            se sentindo bonita, confiante e satisfeita
+                            com seus cabelos.
                         </p>
 
                     </article>
@@ -323,24 +387,23 @@
         </section>
 
 
-        <!-- =========================
+        <!-- ==================================================
              SERVIÇOS
-        ========================== -->
+        =================================================== -->
 
-        <section class="section services" id="servicos">
+        <section class="services section" id="servicos">
 
             <div class="container">
 
                 <div class="section-heading center">
 
-                    <div class="section-label">
-                        <i class="fas fa-scissors"></i>
-                        Serviços
-                    </div>
+                    <span class="section-label">
+                        SERVIÇOS
+                    </span>
 
                     <h2>
-                        Cuide dos seus
-                        <span>cabelos.</span>
+                        Cuidados para
+                        <span>seus cabelos.</span>
                     </h2>
 
                     <p>
@@ -352,14 +415,18 @@
 
                 <div class="services-grid">
 
-                    <article class="service-card">
+                    <article class="service">
 
-                        <span class="service-number">
-                            01
-                        </span>
+                        <div class="service-top">
 
-                        <div class="service-icon">
-                            <i class="fas fa-wand-magic-sparkles"></i>
+                            <span class="service-number">
+                                01
+                            </span>
+
+                            <div class="service-icon">
+                                <i class="fas fa-wand-magic-sparkles"></i>
+                            </div>
+
                         </div>
 
                         <h3>
@@ -367,61 +434,71 @@
                         </h3>
 
                         <p>
-                            Para quem busca cabelos mais alinhados,
-                            disciplinados e com aparência saudável.
+                            Para quem deseja fios mais alinhados,
+                            disciplinados e com aparência bonita
+                            e cuidada.
                         </p>
 
                         <a
-                            href="https://wa.me/5545988037494?text=Olá%20Giseli!%20Gostaria%20de%20saber%20sobre%20o%20Alisamento%20Progressivo."
+                            href="https://wa.me/5545988037494?text=Olá%20Giseli!%20Gostaria%20de%20saber%20mais%20sobre%20o%20alisamento%20progressivo."
                             target="_blank"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                         >
-                            Saber mais
+                            Quero saber mais
                             <i class="fas fa-arrow-right"></i>
                         </a>
 
                     </article>
 
 
-                    <article class="service-card">
+                    <article class="service">
 
-                        <span class="service-number">
-                            02
-                        </span>
+                        <div class="service-top">
 
-                        <div class="service-icon">
-                            <i class="fas fa-sparkles"></i>
+                            <span class="service-number">
+                                02
+                            </span>
+
+                            <div class="service-icon">
+                                <i class="fas fa-sparkles"></i>
+                            </div>
+
                         </div>
 
                         <h3>
-                            Tratamento Capilar
+                            Cuidados Capilares
                         </h3>
 
                         <p>
                             Cuidados especiais para ajudar a manter
-                            os fios bonitos, macios e bem cuidados.
+                            os fios bonitos, macios e com aparência
+                            saudável.
                         </p>
 
                         <a
-                            href="https://wa.me/5545988037494?text=Olá%20Giseli!%20Gostaria%20de%20saber%20sobre%20os%20tratamentos."
+                            href="https://wa.me/5545988037494?text=Olá%20Giseli!%20Gostaria%20de%20saber%20mais%20sobre%20os%20cuidados%20capilares."
                             target="_blank"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                         >
-                            Saber mais
+                            Quero saber mais
                             <i class="fas fa-arrow-right"></i>
                         </a>
 
                     </article>
 
 
-                    <article class="service-card">
+                    <article class="service">
 
-                        <span class="service-number">
-                            03
-                        </span>
+                        <div class="service-top">
 
-                        <div class="service-icon">
-                            <i class="fas fa-crown"></i>
+                            <span class="service-number">
+                                03
+                            </span>
+
+                            <div class="service-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+
                         </div>
 
                         <h3>
@@ -429,16 +506,17 @@
                         </h3>
 
                         <p>
-                            Converse comigo para entender qual atendimento
-                            é mais adequado para o seu cabelo.
+                            Converse diretamente com a Giseli para
+                            conhecer o atendimento mais adequado
+                            para seus cabelos.
                         </p>
 
                         <a
                             href="https://wa.me/5545988037494?text=Olá%20Giseli!%20Gostaria%20de%20agendar%20uma%20avaliação."
                             target="_blank"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                         >
-                            Agendar
+                            Agendar avaliação
                             <i class="fas fa-arrow-right"></i>
                         </a>
 
@@ -451,36 +529,92 @@
         </section>
 
 
-        <!-- =========================
-             CONTATO / CTA
-        ========================== -->
+        <!-- ==================================================
+             INSTAGRAM / GALERIA
+        =================================================== -->
+
+        <section class="gallery section">
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <span class="section-label">
+                        INSPIRAÇÃO
+                    </span>
+
+                    <h2>
+                        Seu próximo
+                        <span>visual começa aqui.</span>
+                    </h2>
+
+                    <p>
+                        Em breve, você poderá conferir mais resultados
+                        e trabalhos realizados.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery-placeholder">
+
+                    <i class="fab fa-instagram"></i>
+
+                    <h3>
+                        Acompanhe a Giseli no Instagram
+                    </h3>
+
+                    <p>
+                        Veja novidades, resultados e conteúdos
+                        sobre beleza e cabelos.
+                    </p>
+
+                    <a
+                        href="https://instagram.com/giseliarno"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-secondary"
+                    >
+                        <i class="fab fa-instagram"></i>
+                        @giseliarno
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             CTA FINAL
+        =================================================== -->
 
         <section class="cta" id="contato">
 
-            <div class="cta-glow"></div>
+            <div class="cta-background"></div>
 
-            <div class="cta-content">
+            <div class="container cta-content">
 
-                <div class="section-label">
-                    <i class="fas fa-calendar-check"></i>
-                    Agende seu horário
-                </div>
+                <span class="section-label">
+                    SEU MOMENTO
+                </span>
 
                 <h2>
-                    Pronta para transformar
-                    <span>seus cabelos?</span>
+                    Pronta para
+                    <span>se sentir ainda mais linda?</span>
                 </h2>
 
                 <p>
-                    Entre em contato pelo WhatsApp e consulte os horários
-                    disponíveis para seu atendimento.
+                    Entre em contato pelo WhatsApp e consulte
+                    os horários disponíveis para o seu atendimento.
                 </p>
 
                 <a
-                    href="https://wa.me/5545988037494?text=Olá%20Giseli!%20Gostaria%20de%20agendar%20um%20horário."
+                    href="https://wa.me/5545988037494?text=Olá%20Giseli!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20um%20horário."
                     target="_blank"
-                    rel="noopener"
-                    class="btn btn-whatsapp btn-large"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-large"
                 >
                     <i class="fab fa-whatsapp"></i>
                     Falar com a Giseli
@@ -493,25 +627,25 @@
     </main>
 
 
-    <!-- =========================
+    <!-- ==================================================
          RODAPÉ
-    ========================== -->
+    =================================================== -->
 
     <footer class="footer">
 
         <div class="container">
 
-            <div class="footer-content">
+            <div class="footer-main">
 
-                <div>
+                <div class="footer-brand">
 
-                    <div class="footer-logo">
+                    <strong>
                         GISELI ARNO
-                    </div>
+                    </strong>
 
-                    <p>
-                        Beleza & Alisamento Progressivo
-                    </p>
+                    <span>
+                        BELEZA & PROGRESSIVA
+                    </span>
 
                 </div>
 
@@ -521,7 +655,7 @@
                     <a
                         href="https://instagram.com/giseliarno"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
                         aria-label="Instagram"
                     >
                         <i class="fab fa-instagram"></i>
@@ -530,7 +664,7 @@
                     <a
                         href="https://wa.me/5545988037494"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
                         aria-label="WhatsApp"
                     >
                         <i class="fab fa-whatsapp"></i>
@@ -539,7 +673,7 @@
                     <a
                         href="https://facebook.com/"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
                         aria-label="Facebook"
                     >
                         <i class="fab fa-facebook-f"></i>
@@ -550,8 +684,16 @@
             </div>
 
 
-            <div class="copyright">
-                © 2026 Giseli Arno — Todos os direitos reservados.
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 Giseli Arno
+                </span>
+
+                <span>
+                    Beleza, cuidado e confiança.
+                </span>
+
             </div>
 
         </div>
@@ -559,23 +701,24 @@
     </footer>
 
 
-    <!-- =========================
+    <!-- ==================================================
          WHATSAPP FLUTUANTE
-    ========================== -->
+    =================================================== -->
 
     <a
         href="https://wa.me/5545988037494?text=Olá%20Giseli!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20um%20horário."
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
         class="whatsapp-float"
-        aria-label="Falar pelo WhatsApp"
+        aria-label="Falar com a Giseli pelo WhatsApp"
     >
         <i class="fab fa-whatsapp"></i>
     </a>
 
 
-    <!-- Nosso JavaScript -->
+    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>
-                        </html>
+
+</html>
