@@ -1,157 +1,1221 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giseli Arno | Alisamento Progressivo — Balneário Camboriú SC</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background-color: #0a0a0a;
-            color: #fff;
-            font-family: 'Segoe UI', sans-serif;
-        }
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
-        .hero-img {
-            max-width: 100%;
-            width: 520px;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 0 40px rgba(255,46,136,0.35);
-            margin-bottom: 25px;
-        }
-        h1 {
-            font-size: 42px;
-            font-weight: 700;
-            color: #fff;
-            margin-bottom: 8px;
-        }
-        .subtitulo {
-            font-size: 20px;
-            color: #ff85b8;
-            margin-bottom: 30px;
-        }
-        .btn-whatsapp {
-            background: linear-gradient(135deg, #25d366, #128c7e);
-            color: white;
-            padding: 14px 35px;
-            border-radius: 50px;
-            font-size: 18px;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-block;
-            margin: 10px;
-            transition: transform 0.3s;
-        }
-        .btn-whatsapp:hover {
-            transform: scale(1.05);
-            color: white;
-        }
-        .btn-instagram {
-            background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
-            color: white;
-            padding: 12px 30px;
-            border-radius: 50px;
-            font-size: 17px;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-block;
-            margin: 10px;
-        }
-        .btn-facebook {
-            background: #1877f2;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 50px;
-            font-size: 17px;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-block;
-            margin: 10px;
-        }
-        .section {
-            padding: 60px 20px;
-            max-width: 750px;
-            margin: 0 auto;
-        }
-        h2 {
-            color: #ff2e88;
-            font-size: 26px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #ddd;
-            text-align: center;
-        }
-        footer {
-            text-align: center;
-            padding: 30px;
-            border-top: 1px solid #222;
-            color: #777;
-        }
-    </style>
-</head>
-<body>
+:root {
+    --bg: #090709;
+    --bg-soft: #120c10;
+    --card: #171015;
 
-<!-- 🔹 FOTO NA FRENTE -->
-<section class="hero">
-    <div class="container">
-        <img src="gisele-arno.jpg" alt="Giseli Arno - Especialista em Alisamento Progressivo" class="hero-img">
-        
-        <h1>Giseli Arno</h1>
-        <p class="subtitulo">Especialista em Alisamento Progressivo — Balneário Camboriú / SC</p>
+    --pink: #ff3d91;
+    --pink-light: #ff8abb;
+    --gold: #d7ad63;
+    --gold-light: #f1d49b;
 
-        <a href="https://wa.me/5545988037494" target="_blank" class="btn-whatsapp">
-            <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
-        </a>
-        <br>
-        <a href="https://instagram.com/giseliarno" target="_blank" class="btn-instagram">
-            <i class="fab fa-instagram"></i> @giseliarno
-        </a>
-        <a href="https://facebook.com/" target="_blank" class="btn-facebook">
-            <i class="fab fa-facebook-f"></i> Facebook
-        </a>
-    </div>
-</section>
+    --white: #ffffff;
+    --text: #eeeeee;
+    --muted: #aaa1a6;
 
-<!-- 🔹 SOBRE -->
-<section class="section">
-    <h2>Sobre Mim</h2>
-    <p>Olá! Sou a Giseli Arno, profissional especializada em Alisamento Progressivo. 💖</p>
-    <p>Trabalho com técnicas seguras e produtos de qualidade para deixar seus cabelos lisos, brilhantes, macios e com resultado duradouro. Cada atendimento é feito com carinho e atenção ao seu cabelo.</p>
-    <p>Atendo em Balneário Camboriú — Santa Catarina. Venha se sentir ainda mais linda! ✨</p>
-</section>
+    --border: rgba(255, 255, 255, 0.09);
 
-<!-- 🔹 ATENDIMENTO -->
-<section class="section">
-    <h2>Atendimento</h2>
-    <p>📍 Balneário Camboriú — Santa Catarina</p>
-    <p>⏰ Atendimento com horário marcado</p>
-    <br>
-    <a href="https://wa.me/5545988037494" target="_blank" class="btn-whatsapp">
-        <i class="fab fa-whatsapp"></i> Falar no WhatsApp
-    </a>
-</section>
+    --container: 1180px;
+}
 
-<footer>
-    <p>© 2026 Giseli Arno — Especialista em Alisamento Progressivo | Balneário Camboriú - SC</p>
-    <p>Feito com 💖</p>
-</footer>
+/* =========================
+   RESET
+========================= */
 
-</body>
-</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(
+            circle at 80% 10%,
+            rgba(255, 61, 145, 0.08),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--white);
+
+    font-family: "Montserrat", sans-serif;
+
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(92%, var(--container));
+    margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    padding: 20px 0;
+
+    background: rgba(9, 7, 9, 0.65);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid transparent;
+
+    transition: 0.3s ease;
+}
+
+.header.scrolled {
+    padding: 13px 0;
+
+    background: rgba(9, 7, 9, 0.95);
+
+    border-color: var(--border);
+}
+
+.header-content {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 1;
+}
+
+.logo span {
+    font-family: "Cinzel", serif;
+
+    font-size: 22px;
+
+    letter-spacing: 2px;
+}
+
+.logo strong {
+    margin-top: 5px;
+
+    color: var(--gold);
+
+    font-size: 10px;
+
+    letter-spacing: 5px;
+}
+
+.nav {
+    display: flex;
+
+    gap: 35px;
+}
+
+.nav a {
+    position: relative;
+
+    color: #d8d2d5;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.nav a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 1px;
+
+    background: var(--pink);
+
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+
+    border: 0;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 130px 0 80px;
+
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    left: -250px;
+    top: 20%;
+
+    border-radius: 50%;
+
+    background: rgba(255, 61, 145, 0.08);
+
+    filter: blur(100px);
+
+    pointer-events: none;
+}
+
+.hero-grid {
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: 1fr 0.9fr;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+.hero-content {
+    max-width: 610px;
+}
+
+.eyebrow,
+.section-label {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 22px;
+
+    color: var(--gold);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+}
+
+.eyebrow i {
+    color: var(--pink);
+}
+
+.hero h1 {
+    font-family: "Cinzel", serif;
+
+    font-size: clamp(48px, 6vw, 82px);
+
+    line-height: 1.05;
+
+    font-weight: 600;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 span,
+.intro h2 span,
+.section-heading h2 span,
+.cta h2 span {
+    display: block;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--pink),
+            var(--pink-light),
+            var(--gold-light)
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+.hero-specialty {
+    color: #f0c1d5;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 560px;
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-bottom: 32px;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.hero-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    min-height: 52px;
+
+    padding: 0 25px;
+
+    border-radius: 50px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-whatsapp {
+    background:
+        linear-gradient(
+            135deg,
+            #25d366,
+            #128c7e
+        );
+
+    box-shadow:
+        0 12px 35px rgba(37, 211, 102, 0.18);
+}
+
+.btn-whatsapp:hover {
+    box-shadow:
+        0 16px 40px rgba(37, 211, 102, 0.3);
+}
+
+.btn-outline {
+    border: 1px solid rgba(215, 173, 99, 0.45);
+
+    background: rgba(255, 255, 255, 0.02);
+
+    color: var(--gold-light);
+}
+
+.btn-outline:hover {
+    background: rgba(215, 173, 99, 0.08);
+}
+
+/* =========================
+   REDES SOCIAIS
+========================= */
+
+.social-links {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 28px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+
+    display: grid;
+
+    place-items: center;
+
+    border: 1px solid var(--border);
+
+    border-radius: 50%;
+
+    color: #bcb4b8;
+
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--pink);
+
+    border-color: rgba(255, 61, 145, 0.5);
+
+    transform: translateY(-3px);
+}
+
+/* =========================
+   FOTO PRINCIPAL
+========================= */
+
+.hero-photo {
+    position: relative;
+
+    width: min(100%, 500px);
+
+    margin: auto;
+}
+
+.photo-frame {
+    position: relative;
+
+    z-index: 2;
+
+    overflow: hidden;
+
+    border-radius:
+        180px
+        180px
+        25px
+        25px;
+
+    border: 1px solid rgba(215, 173, 99, 0.4);
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.65),
+        0 0 70px rgba(255, 61, 145, 0.12);
+}
+
+.photo-frame::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 60%,
+            rgba(10, 7, 9, 0.35)
+        );
+
+    pointer-events: none;
+}
+
+.photo-frame img {
+    width: 100%;
+
+    height: 620px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform 0.8s ease;
+}
+
+.photo-frame:hover img {
+    transform: scale(1.04);
+}
+
+.photo-decoration {
+    position: absolute;
+
+    inset:
+        -18px
+        18px
+        18px
+        -18px;
+
+    border:
+
+        1px solid
+        rgba(255, 61, 145, 0.3);
+
+    border-radius:
+        180px
+        180px
+        25px
+        25px;
+}
+
+.photo-badge {
+    position: absolute;
+
+    z-index: 5;
+
+    left: -35px;
+
+    bottom: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px 20px;
+
+    background:
+        rgba(18, 12, 16, 0.92);
+
+    backdrop-filter: blur(15px);
+
+    border:
+        1px solid
+        rgba(215, 173, 99, 0.3);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.photo-badge i {
+    color: var(--gold);
+
+    font-size: 18px;
+}
+
+.photo-badge strong {
+    display: block;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 13px;
+}
+
+.photo-badge span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #aaa;
+
+    font-size: 9px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    padding: 120px 20px;
+
+    text-align: center;
+}
+
+.intro-content {
+    max-width: 800px;
+}
+
+.intro h2,
+.section-heading h2,
+.cta h2 {
+    font-family: "Cinzel", serif;
+
+    font-size: clamp(30px, 4vw, 48px);
+
+    line-height: 1.25;
+
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+.intro p,
+.section-heading p {
+    color: var(--muted);
+
+    line-height: 1.9;
+
+    font-size: 15px;
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.section {
+    padding: 100px 0;
+}
+
+.section-heading {
+    max-width: 700px;
+
+    margin: 0 auto 55px;
+}
+
+.section-heading.center {
+    text-align: center;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.features {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.feature {
+    padding: 35px 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.035),
+            rgba(255,255,255,0.01)
+        );
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 20px;
+
+    transition: 0.4s;
+}
+
+.feature:hover {
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(255,61,145,0.3);
+}
+
+.feature-icon {
+    width: 55px;
+    height: 55px;
+
+    display: grid;
+
+    place-items: center;
+
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+
+    background:
+        rgba(255,61,145,0.08);
+
+    color: var(--pink);
+
+    font-size: 20px;
+}
+
+.feature h3 {
+    font-family: "Cinzel", serif;
+
+    font-size: 19px;
+
+    margin-bottom: 15px;
+}
+
+.feature p {
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+/* =========================
+   SERVIÇOS
+========================= */
+
+.services {
+    background:
+        linear-gradient(
+            180deg,
+            transparent,
+            rgba(255,255,255,0.015),
+            transparent
+        );
+}
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.service-card {
+    position: relative;
+
+    padding: 35px;
+
+    background: #100b0e;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    transition: 0.4s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(215,173,99,0.35);
+}
+
+.service-number {
+    position: absolute;
+
+    right: 25px;
+
+    top: 20px;
+
+    color: #393136;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 28px;
+}
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+
+    display: grid;
+
+    place-items: center;
+
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+
+    background:
+        rgba(255,61,145,0.08);
+
+    color: var(--pink);
+
+    font-size: 20px;
+}
+
+.service-card h3 {
+    font-family: "Cinzel", serif;
+
+    font-size: 19px;
+
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+.service-card a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: var(--gold-light);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.service-card a i {
+    transition: 0.3s;
+}
+
+.service-card a:hover i {
+    transform: translateX(5px);
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    position: relative;
+
+    padding: 120px 20px;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    border-top:
+        1px solid
+        var(--border);
+
+    border-bottom:
+        1px solid
+        var(--border);
+}
+
+.cta-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 700px;
+}
+
+.cta p {
+    color: var(--muted);
+
+    margin-bottom: 30px;
+
+    line-height: 1.8;
+}
+
+.cta-glow {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    background:
+        rgba(255,61,145,0.08);
+
+    filter: blur(100px);
+
+    border-radius: 50%;
+}
+
+.btn-large {
+    min-height: 58px;
+
+    padding: 0 32px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding: 45px 0 20px;
+
+    background: #070507;
+}
+
+.footer-content {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-bottom: 35px;
+}
+
+.footer-logo {
+    font-family: "Cinzel", serif;
+
+    letter-spacing: 3px;
+
+    font-size: 18px;
+}
+
+.footer-content p {
+    color: #716970;
+
+    font-size: 11px;
+
+    margin-top: 7px;
+}
+
+.footer-social {
+    display: flex;
+
+    gap: 10px;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+
+    display: grid;
+
+    place-items: center;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 50%;
+
+    color: #aaa;
+
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: var(--pink);
+
+    border-color: var(--pink);
+}
+
+.copyright {
+    padding-top: 20px;
+
+    border-top:
+        1px solid
+        var(--border);
+
+    text-align: center;
+
+    color: #514b4f;
+
+    font-size: 10px;
+}
+
+/* =========================
+   WHATSAPP FLUTUANTE
+========================= */
+
+.whatsapp-float {
+    position: fixed;
+
+    z-index: 999;
+
+    right: 22px;
+    bottom: 22px;
+
+    width: 58px;
+    height: 58px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #25d366;
+
+    color: white;
+
+    font-size: 27px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(37,211,102,0.3);
+
+    animation:
+        pulseWhatsapp 2.5s infinite;
+
+    transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+}
+
+@keyframes pulseWhatsapp {
+
+    0% {
+        box-shadow:
+            0 0 0 0
+            rgba(37,211,102,0.35);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 14px
+            rgba(37,211,102,0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0
+            rgba(37,211,102,0);
+    }
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 60px;
+    }
+
+    .hero-content {
+        margin: auto;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons,
+    .social-links {
+        justify-content: center;
+    }
+
+    .hero-photo {
+        max-width: 440px;
+    }
+
+    .features,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature,
+    .service-card {
+        max-width: 600px;
+
+        width: 100%;
+
+        margin: auto;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        padding: 10px 6% 20px;
+
+        background:
+            rgba(9,7,9,0.98);
+
+        border-bottom:
+            1px solid
+            var(--border);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform:
+            translateY(-10px);
+
+        transition: 0.3s;
+    }
+
+    .nav.active {
+        opacity: 1;
+
+        visibility: visible;
+
+        transform:
+            translateY(0);
+    }
+
+    .nav a {
+        padding: 15px 0;
+
+        border-bottom:
+            1px solid
+            rgba(255,255,255,0.05);
+    }
+
+    .hero {
+        padding:
+            110px
+            0
+            70px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-specialty {
+        font-size: 16px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .photo-frame img {
+        height: 500px;
+    }
+
+    .photo-badge {
+        left: -5px;
+
+        bottom: 25px;
+    }
+
+    .intro,
+    .cta {
+        padding: 85px 20px;
+    }
+
+    .section {
+        padding: 75px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 25px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 41px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .photo-frame img {
+        height: 440px;
+    }
+
+    .photo-badge {
+        padding: 12px 15px;
+    }
+
+    .whatsapp-float {
+        width: 53px;
+        height: 53px;
+
+        right: 17px;
+        bottom: 17px;
+    }
+}
