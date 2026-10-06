@@ -1,1221 +1,581 @@
-:root {
-    --bg: #090709;
-    --bg-soft: #120c10;
-    --card: #171015;
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    --pink: #ff3d91;
-    --pink-light: #ff8abb;
-    --gold: #d7ad63;
-    --gold-light: #f1d49b;
+    <title>Giseli Arno | Alisamento Progressivo</title>
 
-    --white: #ffffff;
-    --text: #eeeeee;
-    --muted: #aaa1a6;
+    <meta
+        name="description"
+        content="Giseli Arno — Especialista em alisamento progressivo. Beleza, cuidado e cabelos incríveis."
+    >
 
-    --border: rgba(255, 255, 255, 0.09);
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    --container: 1180px;
-}
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
-/* =========================
-   RESET
-========================= */
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-html {
-    scroll-behavior: smooth;
-}
+<body>
 
-body {
-    background:
-        radial-gradient(
-            circle at 80% 10%,
-            rgba(255, 61, 145, 0.08),
-            transparent 30%
-        ),
-        var(--bg);
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
 
-    color: var(--white);
+    <header class="header" id="header">
 
-    font-family: "Montserrat", sans-serif;
+        <div class="container header-content">
 
-    overflow-x: hidden;
-}
+            <a href="#inicio" class="logo">
+                <span>Giseli Arno</span>
+                <strong>BEAUTY</strong>
+            </a>
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Abrir menu"
+            >
+                <i class="fas fa-bars"></i>
+            </button>
 
-img {
-    max-width: 100%;
-    display: block;
-}
+            <nav class="nav" id="nav">
 
-.container {
-    width: min(92%, var(--container));
-    margin: 0 auto;
-}
+                <a href="#inicio">Início</a>
 
-/* =========================
-   HEADER
-========================= */
+                <a href="#sobre">Sobre</a>
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
+                <a href="#servicos">Serviços</a>
 
-    width: 100%;
+                <a href="#contato">Contato</a>
 
-    z-index: 1000;
+            </nav>
 
-    padding: 20px 0;
+        </div>
 
-    background: rgba(9, 7, 9, 0.65);
+    </header>
 
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
 
-    border-bottom: 1px solid transparent;
+    <!-- =========================
+         HERO
+    ========================== -->
 
-    transition: 0.3s ease;
-}
+    <main>
 
-.header.scrolled {
-    padding: 13px 0;
+        <section class="hero" id="inicio">
 
-    background: rgba(9, 7, 9, 0.95);
+            <div class="hero-grid container">
 
-    border-color: var(--border);
-}
+                <div class="hero-content">
 
-.header-content {
-    display: flex;
+                    <div class="eyebrow">
+                        <i class="fas fa-sparkles"></i>
+                        Beleza & Cuidado
+                    </div>
 
-    align-items: center;
+                    <h1>
+                        Cabelos
+                        <span>lindos e alinhados.</span>
+                    </h1>
 
-    justify-content: space-between;
-}
+                    <p class="hero-specialty">
+                        Especialista em Alisamento Progressivo
+                    </p>
 
-.logo {
-    display: flex;
+                    <p class="hero-description">
+                        Realce a beleza dos seus cabelos com um atendimento
+                        personalizado, cuidado profissional e técnicas pensadas
+                        para deixar seus fios mais alinhados, macios e brilhantes.
+                    </p>
 
-    flex-direction: column;
 
-    line-height: 1;
-}
+                    <div class="hero-buttons">
 
-.logo span {
-    font-family: "Cinzel", serif;
+                        <a
+                            href="https://wa.me/5545988037494?text=Olá%20Giseli!%20Gostaria%20de%20agendar%20um%20horário."
+                            target="_blank"
+                            rel="noopener"
+                            class="btn btn-whatsapp"
+                        >
+                            <i class="fab fa-whatsapp"></i>
+                            Agendar pelo WhatsApp
+                        </a>
 
-    font-size: 22px;
+                        <a
+                            href="#servicos"
+                            class="btn btn-outline"
+                        >
+                            Conhecer serviços
+                        </a>
 
-    letter-spacing: 2px;
-}
+                    </div>
 
-.logo strong {
-    margin-top: 5px;
 
-    color: var(--gold);
+                    <div class="social-links">
 
-    font-size: 10px;
+                        <a
+                            href="https://instagram.com/giseliarno"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="Instagram"
+                        >
+                            <i class="fab fa-instagram"></i>
+                        </a>
 
-    letter-spacing: 5px;
-}
+                        <a
+                            href="https://facebook.com/"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="Facebook"
+                        >
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
 
-.nav {
-    display: flex;
+                        <a
+                            href="https://wa.me/5545988037494"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="WhatsApp"
+                        >
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
 
-    gap: 35px;
-}
+                    </div>
 
-.nav a {
-    position: relative;
+                </div>
 
-    color: #d8d2d5;
 
-    font-size: 13px;
+                <!-- FOTO -->
 
-    transition: 0.3s;
-}
+                <div class="hero-photo">
 
-.nav a::after {
-    content: "";
+                    <div class="photo-decoration"></div>
 
-    position: absolute;
+                    <div class="photo-frame">
 
-    left: 0;
-    bottom: -7px;
+                        <img
+                            src="gisele-arno.jpg"
+                            alt="Giseli Arno - Especialista em Alisamento Progressivo"
+                        >
 
-    width: 0;
-    height: 1px;
+                    </div>
 
-    background: var(--pink);
+                    <div class="photo-badge">
 
-    transition: 0.3s;
-}
+                        <i class="fas fa-crown"></i>
 
-.nav a:hover {
-    color: white;
-}
+                        <div>
+                            <strong>Giseli Arno</strong>
 
-.nav a:hover::after {
-    width: 100%;
-}
+                            <span>
+                                Beleza & Progressiva
+                            </span>
+                        </div>
 
-.menu-toggle {
-    display: none;
+                    </div>
 
-    border: 0;
+                </div>
 
-    background: transparent;
+            </div>
 
-    color: white;
+        </section>
 
-    font-size: 24px;
 
-    cursor: pointer;
-}
+        <!-- =========================
+             SOBRE
+        ========================== -->
 
-/* =========================
-   HERO
-========================= */
+        <section class="intro" id="sobre">
 
-.hero {
-    position: relative;
+            <div class="intro-content">
 
-    min-height: 100vh;
+                <div class="section-label">
+                    <i class="fas fa-heart"></i>
+                    Sobre o atendimento
+                </div>
 
-    display: flex;
+                <h2>
+                    Seu cabelo merece
+                    <span>cuidado especial.</span>
+                </h2>
 
-    align-items: center;
+                <p>
+                    Olá! Sou a Giseli Arno, especialista em alisamento
+                    progressivo. Meu objetivo é proporcionar uma experiência
+                    de beleza com atenção aos detalhes e cuidado com cada fio.
+                </p>
 
-    padding: 130px 0 80px;
+                <br>
 
-    overflow: hidden;
-}
+                <p>
+                    Cada atendimento é pensado para valorizar a beleza dos
+                    seus cabelos e proporcionar um resultado bonito, alinhado
+                    e elegante.
+                </p>
 
-.hero-background {
-    position: absolute;
+            </div>
 
-    width: 500px;
-    height: 500px;
+        </section>
 
-    left: -250px;
-    top: 20%;
 
-    border-radius: 50%;
+        <!-- =========================
+             DIFERENCIAIS
+        ========================== -->
 
-    background: rgba(255, 61, 145, 0.08);
+        <section class="section">
 
-    filter: blur(100px);
+            <div class="container">
 
-    pointer-events: none;
-}
+                <div class="section-heading center">
 
-.hero-grid {
-    position: relative;
+                    <div class="section-label">
+                        <i class="fas fa-star"></i>
+                        Meu diferencial
+                    </div>
 
-    z-index: 2;
+                    <h2>
+                        Beleza com
+                        <span>carinho e dedicação.</span>
+                    </h2>
 
-    display: grid;
+                    <p>
+                        Um atendimento pensado para você se sentir ainda mais
+                        bonita e confiante.
+                    </p>
 
-    grid-template-columns: 1fr 0.9fr;
+                </div>
 
-    align-items: center;
 
-    gap: 70px;
-}
+                <div class="features">
 
-.hero-content {
-    max-width: 610px;
-}
+                    <article class="feature">
 
-.eyebrow,
-.section-label {
-    display: inline-flex;
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
 
-    align-items: center;
+                        <h3>
+                            Atendimento personalizado
+                        </h3>
 
-    gap: 9px;
+                        <p>
+                            Cada cabelo possui suas características.
+                            Por isso, o atendimento é realizado de forma
+                            personalizada.
+                        </p>
 
-    margin-bottom: 22px;
+                    </article>
 
-    color: var(--gold);
 
-    font-size: 11px;
+                    <article class="feature">
 
-    font-weight: 600;
+                        <div class="feature-icon">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                        </div>
 
-    text-transform: uppercase;
+                        <h3>
+                            Resultado bonito
+                        </h3>
 
-    letter-spacing: 3px;
-}
+                        <p>
+                            Técnicas de alisamento pensadas para deixar
+                            os fios mais alinhados, macios e brilhantes.
+                        </p>
 
-.eyebrow i {
-    color: var(--pink);
-}
+                    </article>
 
-.hero h1 {
-    font-family: "Cinzel", serif;
 
-    font-size: clamp(48px, 6vw, 82px);
+                    <article class="feature">
 
-    line-height: 1.05;
+                        <div class="feature-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
 
-    font-weight: 600;
+                        <h3>
+                            Cuidado profissional
+                        </h3>
 
-    letter-spacing: -2px;
+                        <p>
+                            Seu cabelo recebe atenção em cada etapa do
+                            atendimento.
+                        </p>
 
-    margin-bottom: 18px;
-}
+                    </article>
 
-.hero h1 span,
-.intro h2 span,
-.section-heading h2 span,
-.cta h2 span {
-    display: block;
+                </div>
 
-    background:
-        linear-gradient(
-            90deg,
-            var(--pink),
-            var(--pink-light),
-            var(--gold-light)
-        );
+            </div>
 
-    -webkit-background-clip: text;
-    background-clip: text;
+        </section>
 
-    color: transparent;
-}
 
-.hero-specialty {
-    color: #f0c1d5;
+        <!-- =========================
+             SERVIÇOS
+        ========================== -->
 
-    font-size: 18px;
+        <section class="section services" id="servicos">
 
-    font-weight: 500;
+            <div class="container">
 
-    margin-bottom: 20px;
-}
+                <div class="section-heading center">
 
-.hero-description {
-    max-width: 560px;
+                    <div class="section-label">
+                        <i class="fas fa-scissors"></i>
+                        Serviços
+                    </div>
 
-    color: var(--muted);
+                    <h2>
+                        Cuide dos seus
+                        <span>cabelos.</span>
+                    </h2>
 
-    font-size: 15px;
+                    <p>
+                        Conheça algumas das opções de atendimento.
+                    </p>
 
-    line-height: 1.9;
+                </div>
 
-    margin-bottom: 32px;
-}
 
-/* =========================
-   BOTÕES
-========================= */
+                <div class="services-grid">
 
-.hero-buttons {
-    display: flex;
+                    <article class="service-card">
 
-    flex-wrap: wrap;
+                        <span class="service-number">
+                            01
+                        </span>
 
-    gap: 12px;
-}
+                        <div class="service-icon">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                        </div>
 
-.btn {
-    display: inline-flex;
+                        <h3>
+                            Alisamento Progressivo
+                        </h3>
 
-    align-items: center;
+                        <p>
+                            Para quem busca cabelos mais alinhados,
+                            disciplinados e com aparência saudável.
+                        </p>
 
-    justify-content: center;
+                        <a
+                            href="https://wa.me/5545988037494?text=Olá%20Giseli!%20Gostaria%20de%20saber%20sobre%20o%20Alisamento%20Progressivo."
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Saber mais
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
 
-    gap: 10px;
+                    </article>
 
-    min-height: 52px;
 
-    padding: 0 25px;
+                    <article class="service-card">
 
-    border-radius: 50px;
+                        <span class="service-number">
+                            02
+                        </span>
 
-    font-size: 13px;
+                        <div class="service-icon">
+                            <i class="fas fa-sparkles"></i>
+                        </div>
 
-    font-weight: 600;
+                        <h3>
+                            Tratamento Capilar
+                        </h3>
 
-    transition: 0.3s ease;
-}
+                        <p>
+                            Cuidados especiais para ajudar a manter
+                            os fios bonitos, macios e bem cuidados.
+                        </p>
 
-.btn:hover {
-    transform: translateY(-3px);
-}
+                        <a
+                            href="https://wa.me/5545988037494?text=Olá%20Giseli!%20Gostaria%20de%20saber%20sobre%20os%20tratamentos."
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Saber mais
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
 
-.btn-whatsapp {
-    background:
-        linear-gradient(
-            135deg,
-            #25d366,
-            #128c7e
-        );
+                    </article>
 
-    box-shadow:
-        0 12px 35px rgba(37, 211, 102, 0.18);
-}
 
-.btn-whatsapp:hover {
-    box-shadow:
-        0 16px 40px rgba(37, 211, 102, 0.3);
-}
+                    <article class="service-card">
 
-.btn-outline {
-    border: 1px solid rgba(215, 173, 99, 0.45);
+                        <span class="service-number">
+                            03
+                        </span>
 
-    background: rgba(255, 255, 255, 0.02);
+                        <div class="service-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
 
-    color: var(--gold-light);
-}
+                        <h3>
+                            Avaliação
+                        </h3>
 
-.btn-outline:hover {
-    background: rgba(215, 173, 99, 0.08);
-}
+                        <p>
+                            Converse comigo para entender qual atendimento
+                            é mais adequado para o seu cabelo.
+                        </p>
 
-/* =========================
-   REDES SOCIAIS
-========================= */
+                        <a
+                            href="https://wa.me/5545988037494?text=Olá%20Giseli!%20Gostaria%20de%20agendar%20uma%20avaliação."
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Agendar
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
 
-.social-links {
-    display: flex;
+                    </article>
 
-    gap: 12px;
+                </div>
 
-    margin-top: 28px;
-}
+            </div>
 
-.social-links a {
-    width: 40px;
-    height: 40px;
+        </section>
 
-    display: grid;
 
-    place-items: center;
+        <!-- =========================
+             CONTATO / CTA
+        ========================== -->
 
-    border: 1px solid var(--border);
+        <section class="cta" id="contato">
 
-    border-radius: 50%;
+            <div class="cta-glow"></div>
 
-    color: #bcb4b8;
+            <div class="cta-content">
 
-    transition: 0.3s;
-}
+                <div class="section-label">
+                    <i class="fas fa-calendar-check"></i>
+                    Agende seu horário
+                </div>
 
-.social-links a:hover {
-    color: var(--pink);
+                <h2>
+                    Pronta para transformar
+                    <span>seus cabelos?</span>
+                </h2>
 
-    border-color: rgba(255, 61, 145, 0.5);
+                <p>
+                    Entre em contato pelo WhatsApp e consulte os horários
+                    disponíveis para seu atendimento.
+                </p>
 
-    transform: translateY(-3px);
-}
+                <a
+                    href="https://wa.me/5545988037494?text=Olá%20Giseli!%20Gostaria%20de%20agendar%20um%20horário."
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-whatsapp btn-large"
+                >
+                    <i class="fab fa-whatsapp"></i>
+                    Falar com a Giseli
+                </a>
 
-/* =========================
-   FOTO PRINCIPAL
-========================= */
+            </div>
 
-.hero-photo {
-    position: relative;
+        </section>
 
-    width: min(100%, 500px);
+    </main>
 
-    margin: auto;
-}
 
-.photo-frame {
-    position: relative;
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
 
-    z-index: 2;
+    <footer class="footer">
 
-    overflow: hidden;
+        <div class="container">
 
-    border-radius:
-        180px
-        180px
-        25px
-        25px;
+            <div class="footer-content">
 
-    border: 1px solid rgba(215, 173, 99, 0.4);
+                <div>
 
-    box-shadow:
-        0 30px 80px rgba(0, 0, 0, 0.65),
-        0 0 70px rgba(255, 61, 145, 0.12);
-}
+                    <div class="footer-logo">
+                        GISELI ARNO
+                    </div>
 
-.photo-frame::after {
-    content: "";
+                    <p>
+                        Beleza & Alisamento Progressivo
+                    </p>
 
-    position: absolute;
+                </div>
 
-    inset: 0;
 
-    background:
-        linear-gradient(
-            180deg,
-            transparent 60%,
-            rgba(10, 7, 9, 0.35)
-        );
+                <div class="footer-social">
 
-    pointer-events: none;
-}
+                    <a
+                        href="https://instagram.com/giseliarno"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Instagram"
+                    >
+                        <i class="fab fa-instagram"></i>
+                    </a>
 
-.photo-frame img {
-    width: 100%;
+                    <a
+                        href="https://wa.me/5545988037494"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="WhatsApp"
+                    >
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
 
-    height: 620px;
+                    <a
+                        href="https://facebook.com/"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Facebook"
+                    >
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
 
-    object-fit: cover;
+                </div>
 
-    object-position: center;
+            </div>
 
-    transition: transform 0.8s ease;
-}
 
-.photo-frame:hover img {
-    transform: scale(1.04);
-}
+            <div class="copyright">
+                © 2026 Giseli Arno — Todos os direitos reservados.
+            </div>
 
-.photo-decoration {
-    position: absolute;
+        </div>
 
-    inset:
-        -18px
-        18px
-        18px
-        -18px;
+    </footer>
 
-    border:
 
-        1px solid
-        rgba(255, 61, 145, 0.3);
+    <!-- =========================
+         WHATSAPP FLUTUANTE
+    ========================== -->
 
-    border-radius:
-        180px
-        180px
-        25px
-        25px;
-}
+    <a
+        href="https://wa.me/5545988037494?text=Olá%20Giseli!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20um%20horário."
+        target="_blank"
+        rel="noopener"
+        class="whatsapp-float"
+        aria-label="Falar pelo WhatsApp"
+    >
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-.photo-badge {
-    position: absolute;
 
-    z-index: 5;
+    <!-- Nosso JavaScript -->
+    <script src="script.js"></script>
 
-    left: -35px;
-
-    bottom: 40px;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 12px;
-
-    padding: 15px 20px;
-
-    background:
-        rgba(18, 12, 16, 0.92);
-
-    backdrop-filter: blur(15px);
-
-    border:
-        1px solid
-        rgba(215, 173, 99, 0.3);
-
-    border-radius: 15px;
-
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.4);
-}
-
-.photo-badge i {
-    color: var(--gold);
-
-    font-size: 18px;
-}
-
-.photo-badge strong {
-    display: block;
-
-    font-family: "Cinzel", serif;
-
-    font-size: 13px;
-}
-
-.photo-badge span {
-    display: block;
-
-    margin-top: 4px;
-
-    color: #aaa;
-
-    font-size: 9px;
-
-    text-transform: uppercase;
-
-    letter-spacing: 1px;
-}
-
-/* =========================
-   INTRO
-========================= */
-
-.intro {
-    padding: 120px 20px;
-
-    text-align: center;
-}
-
-.intro-content {
-    max-width: 800px;
-}
-
-.intro h2,
-.section-heading h2,
-.cta h2 {
-    font-family: "Cinzel", serif;
-
-    font-size: clamp(30px, 4vw, 48px);
-
-    line-height: 1.25;
-
-    font-weight: 500;
-
-    margin-bottom: 25px;
-}
-
-.intro p,
-.section-heading p {
-    color: var(--muted);
-
-    line-height: 1.9;
-
-    font-size: 15px;
-}
-
-/* =========================
-   SEÇÕES
-========================= */
-
-.section {
-    padding: 100px 0;
-}
-
-.section-heading {
-    max-width: 700px;
-
-    margin: 0 auto 55px;
-}
-
-.section-heading.center {
-    text-align: center;
-}
-
-/* =========================
-   CARDS
-========================= */
-
-.features {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 18px;
-}
-
-.feature {
-    padding: 35px 30px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(255,255,255,0.035),
-            rgba(255,255,255,0.01)
-        );
-
-    border:
-        1px solid
-        var(--border);
-
-    border-radius: 20px;
-
-    transition: 0.4s;
-}
-
-.feature:hover {
-    transform: translateY(-8px);
-
-    border-color:
-        rgba(255,61,145,0.3);
-}
-
-.feature-icon {
-    width: 55px;
-    height: 55px;
-
-    display: grid;
-
-    place-items: center;
-
-    margin-bottom: 25px;
-
-    border-radius: 15px;
-
-    background:
-        rgba(255,61,145,0.08);
-
-    color: var(--pink);
-
-    font-size: 20px;
-}
-
-.feature h3 {
-    font-family: "Cinzel", serif;
-
-    font-size: 19px;
-
-    margin-bottom: 15px;
-}
-
-.feature p {
-    color: var(--muted);
-
-    font-size: 13px;
-
-    line-height: 1.8;
-}
-
-/* =========================
-   SERVIÇOS
-========================= */
-
-.services {
-    background:
-        linear-gradient(
-            180deg,
-            transparent,
-            rgba(255,255,255,0.015),
-            transparent
-        );
-}
-
-.services-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 20px;
-}
-
-.service-card {
-    position: relative;
-
-    padding: 35px;
-
-    background: #100b0e;
-
-    border:
-        1px solid
-        var(--border);
-
-    border-radius: 22px;
-
-    overflow: hidden;
-
-    transition: 0.4s;
-}
-
-.service-card:hover {
-    transform: translateY(-8px);
-
-    border-color:
-        rgba(215,173,99,0.35);
-}
-
-.service-number {
-    position: absolute;
-
-    right: 25px;
-
-    top: 20px;
-
-    color: #393136;
-
-    font-family: "Cinzel", serif;
-
-    font-size: 28px;
-}
-
-.service-icon {
-    width: 55px;
-    height: 55px;
-
-    display: grid;
-
-    place-items: center;
-
-    margin-bottom: 25px;
-
-    border-radius: 15px;
-
-    background:
-        rgba(255,61,145,0.08);
-
-    color: var(--pink);
-
-    font-size: 20px;
-}
-
-.service-card h3 {
-    font-family: "Cinzel", serif;
-
-    font-size: 19px;
-
-    margin-bottom: 15px;
-}
-
-.service-card p {
-    color: var(--muted);
-
-    font-size: 13px;
-
-    line-height: 1.8;
-
-    margin-bottom: 25px;
-}
-
-.service-card a {
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 8px;
-
-    color: var(--gold-light);
-
-    font-size: 12px;
-
-    font-weight: 600;
-
-    text-transform: uppercase;
-
-    letter-spacing: 1px;
-}
-
-.service-card a i {
-    transition: 0.3s;
-}
-
-.service-card a:hover i {
-    transform: translateX(5px);
-}
-
-/* =========================
-   CTA
-========================= */
-
-.cta {
-    position: relative;
-
-    padding: 120px 20px;
-
-    text-align: center;
-
-    overflow: hidden;
-
-    border-top:
-        1px solid
-        var(--border);
-
-    border-bottom:
-        1px solid
-        var(--border);
-}
-
-.cta-content {
-    position: relative;
-
-    z-index: 2;
-
-    max-width: 700px;
-}
-
-.cta p {
-    color: var(--muted);
-
-    margin-bottom: 30px;
-
-    line-height: 1.8;
-}
-
-.cta-glow {
-    position: absolute;
-
-    width: 500px;
-    height: 500px;
-
-    left: 50%;
-    top: 50%;
-
-    transform:
-        translate(-50%, -50%);
-
-    background:
-        rgba(255,61,145,0.08);
-
-    filter: blur(100px);
-
-    border-radius: 50%;
-}
-
-.btn-large {
-    min-height: 58px;
-
-    padding: 0 32px;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-.footer {
-    padding: 45px 0 20px;
-
-    background: #070507;
-}
-
-.footer-content {
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    padding-bottom: 35px;
-}
-
-.footer-logo {
-    font-family: "Cinzel", serif;
-
-    letter-spacing: 3px;
-
-    font-size: 18px;
-}
-
-.footer-content p {
-    color: #716970;
-
-    font-size: 11px;
-
-    margin-top: 7px;
-}
-
-.footer-social {
-    display: flex;
-
-    gap: 10px;
-}
-
-.footer-social a {
-    width: 40px;
-    height: 40px;
-
-    display: grid;
-
-    place-items: center;
-
-    border:
-        1px solid
-        var(--border);
-
-    border-radius: 50%;
-
-    color: #aaa;
-
-    transition: 0.3s;
-}
-
-.footer-social a:hover {
-    color: var(--pink);
-
-    border-color: var(--pink);
-}
-
-.copyright {
-    padding-top: 20px;
-
-    border-top:
-        1px solid
-        var(--border);
-
-    text-align: center;
-
-    color: #514b4f;
-
-    font-size: 10px;
-}
-
-/* =========================
-   WHATSAPP FLUTUANTE
-========================= */
-
-.whatsapp-float {
-    position: fixed;
-
-    z-index: 999;
-
-    right: 22px;
-    bottom: 22px;
-
-    width: 58px;
-    height: 58px;
-
-    display: grid;
-
-    place-items: center;
-
-    border-radius: 50%;
-
-    background: #25d366;
-
-    color: white;
-
-    font-size: 27px;
-
-    box-shadow:
-        0 10px 30px
-        rgba(37,211,102,0.3);
-
-    animation:
-        pulseWhatsapp 2.5s infinite;
-
-    transition: 0.3s;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.08);
-}
-
-@keyframes pulseWhatsapp {
-
-    0% {
-        box-shadow:
-            0 0 0 0
-            rgba(37,211,102,0.35);
-    }
-
-    70% {
-        box-shadow:
-            0 0 0 14px
-            rgba(37,211,102,0);
-    }
-
-    100% {
-        box-shadow:
-            0 0 0 0
-            rgba(37,211,102,0);
-    }
-}
-
-/* =========================
-   RESPONSIVO
-========================= */
-
-@media (max-width: 900px) {
-
-    .hero-grid {
-        grid-template-columns: 1fr;
-
-        text-align: center;
-
-        gap: 60px;
-    }
-
-    .hero-content {
-        margin: auto;
-    }
-
-    .hero-description {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .hero-buttons,
-    .social-links {
-        justify-content: center;
-    }
-
-    .hero-photo {
-        max-width: 440px;
-    }
-
-    .features,
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .feature,
-    .service-card {
-        max-width: 600px;
-
-        width: 100%;
-
-        margin: auto;
-    }
-}
-
-@media (max-width: 700px) {
-
-    .header {
-        padding: 15px 0;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav {
-        position: absolute;
-
-        top: 100%;
-        left: 0;
-
-        width: 100%;
-
-        display: flex;
-
-        flex-direction: column;
-
-        gap: 0;
-
-        padding: 10px 6% 20px;
-
-        background:
-            rgba(9,7,9,0.98);
-
-        border-bottom:
-            1px solid
-            var(--border);
-
-        opacity: 0;
-
-        visibility: hidden;
-
-        transform:
-            translateY(-10px);
-
-        transition: 0.3s;
-    }
-
-    .nav.active {
-        opacity: 1;
-
-        visibility: visible;
-
-        transform:
-            translateY(0);
-    }
-
-    .nav a {
-        padding: 15px 0;
-
-        border-bottom:
-            1px solid
-            rgba(255,255,255,0.05);
-    }
-
-    .hero {
-        padding:
-            110px
-            0
-            70px;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-    }
-
-    .hero-specialty {
-        font-size: 16px;
-    }
-
-    .hero-description {
-        font-size: 14px;
-    }
-
-    .photo-frame img {
-        height: 500px;
-    }
-
-    .photo-badge {
-        left: -5px;
-
-        bottom: 25px;
-    }
-
-    .intro,
-    .cta {
-        padding: 85px 20px;
-    }
-
-    .section {
-        padding: 75px 0;
-    }
-
-    .footer-content {
-        flex-direction: column;
-
-        text-align: center;
-
-        gap: 25px;
-    }
-}
-
-@media (max-width: 430px) {
-
-    .container {
-        width: 90%;
-    }
-
-    .hero h1 {
-        font-size: 41px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-    }
-
-    .btn {
-        width: 100%;
-    }
-
-    .photo-frame img {
-        height: 440px;
-    }
-
-    .photo-badge {
-        padding: 12px 15px;
-    }
-
-    .whatsapp-float {
-        width: 53px;
-        height: 53px;
-
-        right: 17px;
-        bottom: 17px;
-    }
-}
+</body>
+                        </html>
