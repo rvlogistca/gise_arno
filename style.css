@@ -1,0 +1,38 @@
+:root {
+    --preto: #090709;
+    --preto2: #140d11;
+    --rosa: #ff3d91;
+    --rosa-claro: #ff8abb;
+    --dourado: #d7ad63;
+    --dourado-claro: #f1d49b;
+    --branco: #ffffff;
+    --texto: #eeeeee;
+    --cinza: #aaa1a6;
+    --borda: rgba(255,255,255,0.09);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(
+            circle at 80% 10%,
+            rgba(255, 61, 145, 0.10),
+            transparent 30%
+        ),
+        var(--preto);
+
+    color: var(--branco);
+    font-family: "Montserrat", Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
